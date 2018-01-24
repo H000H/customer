@@ -1,6 +1,7 @@
 package learn.customer.controller;
 
 import org.myfacade.facade.ProductFacade;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,6 +23,7 @@ public class TestDubboController  {
 //        String strings=getStrings();
         return str;
     }
+
 
     public String getStrings(){
         StringBuffer buffer=new StringBuffer("begin:");
